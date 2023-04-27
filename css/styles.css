@@ -353,6 +353,35 @@ body {
   padding: 32px 16px;
 }
 
+.employee-position {
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--color-iris-accent);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--color-ocean-hover);
+}
+
+.social-list-icon {
+  fill: var(--color-cloud);
+}
+
 /* --------------- /TEAM --------------*/
 
 /* --------- Customers----------- */
