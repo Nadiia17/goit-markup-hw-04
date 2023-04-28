@@ -82,7 +82,7 @@ body {
   margin-bottom: 72px;
 
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
@@ -178,6 +178,7 @@ body {
 /* --------------- Header ---------------*/
 .header {
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header {
   display: flex;
@@ -312,6 +313,7 @@ body {
 .thumb {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   margin-bottom: 8px;
   padding-top: 24px;
@@ -366,7 +368,7 @@ body {
 }
 
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .employee-position {
@@ -385,7 +387,7 @@ body {
   align-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: var(--color-iris-accent);
 }
 
@@ -481,22 +483,23 @@ body {
   column-gap: 24px;
 } */
 
-.project-card {
-  display: flex; /*for card stretching */
-  flex-direction: column; /*for card stretching */
-}
+/* .project-card {
+  display: flex; for card stretching
+  flex-direction: column; for card stretching
+} */
 
-.project-card:hover,
-.project-card:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-link {
-  display: contents; /*for card stretching */
+  /* display: contents; for card stretching */
+  display: block;
 }
 
 .project-card-content {
-  flex-grow: 1; /*for card stretching */
+  /* flex-grow: 1; for card stretching */
 
   padding-top: 32px;
   padding-right: 16px;
@@ -507,8 +510,8 @@ body {
   border-top: none;
 }
 
-.project-card:hover .project-card-content,
-.project-card:focus .project-card-content {
+.project-link:hover .project-card-content,
+.project-link:focus .project-card-content {
   border-color: var(--color-cloud);
 }
 
@@ -524,6 +527,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-left-side {
@@ -544,11 +548,16 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-white);
 }
 
+.footer-social-list {
+  gap: 16px;
+}
+
 .footer-social-link:hover,
-.footer.social-link:focus {
+.footer-social-link:focus {
   background-color: var(--color-green);
 }
 
